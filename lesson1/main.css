@@ -1,0 +1,17 @@
+html,body {
+    scroll-behavior: smooth;
+    background-color: lightskyblue;
+}
+h2{
+    background: yellow;
+}
+#Fam{
+    background-color: red;
+    color: yellow;
+}
+.xxx{
+    color: rgb(255,44,13);
+}
+.pic{
+    width: 300px;
+}
