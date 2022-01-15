@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+.specific {
+    background: pink;
+
+    box-sizing: border-box;
+                        /*min-height: 100px;*/
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+                        /*padding-right: 100px;*/
+    /*padding: 30px;  !*зі всіх сторін*!*/
+    /*padding: 30px 10px;  !*зверху/знизу  - зліва/справа*!*/
+    /*padding: 30px 10px 50px;  !*зверху  - зліва/справа  - знизу*!*/
+    /*padding: 30px 10px 50px 5px;  !*зверху  - справа  - знизу  - зліва!*/
+    /*padding: 0px 0px 0px 32px;  === padding-left: 32px;*/ /*зліва*/
+    border: 12px solid aqua; /*solid/dashed/dotted*/
+    /*border-left: 5px dotted red ;*/
+         /*коло*/
+    /*width: 500px;*/
+    /*height: 500px;*/
+    /*border-radius: 50%;*/
+        /*трiшечки завкруглити кути*/
+    /*border-radius: 30px;*/
+    border-top-left-radius: 300px;
+    /*margin: 100px; !*зовнішня рамка блоку(відступ), описується як padding*!*/
+    margin: 0px auto; /*auto=середина*/
+    box-shadow: black 50px 50px 50px 30px;
+    /*при відведенні:*/
+    transition: 60s;
+}
+/*при наведенні:*/
+.specific:hover{
+    height: 500px;
+    transition: 3s;
+}
