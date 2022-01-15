@@ -1,0 +1,13 @@
+div{
+    background-color: #818181;
+    height: 200px;
+    width: 400px;
+    margin: 100px 10px;
+    box-shadow: #d5b492 -30px -30px 50px 20px;
+    margin-bottom:10px ;
+}
+p{
+    border-left: #ef0807 solid 5px;
+    padding-left: 20px;
+    margin-left: 10px;
+}
