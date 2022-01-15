@@ -1,0 +1,24 @@
+body{
+    background-color: #e4e4e4;
+}
+.box{
+    margin: 20px;
+    background-color: #ffab02;
+    box-sizing: border-box;
+    height: 70px;
+    width: 70px;
+    text-align:center;
+    padding: 25px;
+    display: inline-block;
+}
+#A{box-shadow: #474747 10px 10px 0px 0px;}
+#B{box-shadow: #474747 10px 10px 2px 0px;}
+#C{box-shadow: #474747 10px 10px 2px 2px;}
+#D{box-shadow: #9f9f9f 10px 10px 2px 2px;}
+#E{
+    box-shadow: #474747 10px 10px 4px 0px;
+    border-radius: 2px}
+#F{
+    box-shadow: #9f9f9f 10px 10px 2px 0px;
+    border-radius: 2px}
+
