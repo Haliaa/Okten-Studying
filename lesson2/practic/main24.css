@@ -1,0 +1,26 @@
+#a1{
+    background-color: #8a2928;
+    color: #f8e9db;
+    padding-left: 750px;
+}
+#a2{
+background-color: #c0c0c0;
+padding: 30px;
+}
+#a3{
+    background-color: #6496ec;
+    padding: 50px;
+}
+#a4{
+    background-color: #6cba68;
+    box-sizing: border-box;
+    width: 250px;
+    height: 250px;
+}
+#a5{
+    background-color: #8987ac;
+    box-sizing: border-box;
+    border-radius: 25px;
+    width: 250px;
+    height: 250px;
+    }
