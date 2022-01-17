@@ -1,0 +1,46 @@
+.general{
+    background: #dedede;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+#Widgets{
+    color: white;
+    margin: 10px;
+    text-align:center;
+    padding-top: 45px;
+    background: #246abb;
+    box-sizing: border-box;
+    width: 300px;
+    height: 100px;
+}
+#Contact{
+    color: white;
+    margin: 10px;
+    text-align:center;
+    padding-top: 90px;
+    background: #246abb;
+    box-sizing: border-box;
+    width: 300px;
+    height: 200px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.row div{
+    box-sizing: border-box;
+    background: #18467b;
+    color: white;
+    font-size: 13px;
+    height: 100px;
+    width: 90px;
+    text-align:center;
+    padding-top: 40px;
+}
+
