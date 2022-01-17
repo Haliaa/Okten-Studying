@@ -1,0 +1,50 @@
+.general{
+    background: rgb(238, 238, 238);
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+}
+
+#KBABOS{
+    margin: 5px;
+    text-align:center;
+    padding-top: 45px;
+    background: #246abb;
+    box-sizing: border-box;
+    width: 310px;
+    height: 100px;
+}
+.Home-About{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.Home-About div{
+    margin: 5px;
+    background: #246abb;
+    height: 170px;
+    width: 151px;
+    text-align:center;
+    padding-top: 135px;
+}
+.CDE_row{
+    display: flex;
+    flex-direction: row;
+}
+.CDE_row div{
+    margin: 5px;
+    box-sizing: border-box;
+    background: #18467b;
+    height: 100px;
+    width: 96px;
+    text-align:center;
+    padding-top: 35px;
+}
+.double-row-column{
+    display: flex;
+    flex-direction: column;
+}
