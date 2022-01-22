@@ -1,0 +1,232 @@
+/*11111111111111111111111111111111111111*/
+.general{
+    border: 4px solid black;
+    border-radius: 15px;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#A{
+    margin: 5px;
+    text-align:center;
+    padding-top: 45px;
+    background: #9f9f9f;
+    box-sizing: border-box;
+    width: 310px;
+    height: 100px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#B{
+    margin: 5px;
+    text-align:center;
+    padding-top: 95px;
+    background: #9f9f9f;
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+}
+#F{
+    margin: 5px;
+    text-align:center;
+    padding-top: 100px;
+    background: #9f9f9f;
+    box-sizing: border-box;
+    width: 100px;
+    height: 200px;
+}
+@media screen and (max-width: 992px) {
+
+    .row {
+        flex-direction: column;
+    }
+    #A, #B, #F{
+        width: 290px;
+        border-radius: 20px;
+        margin: 15px;
+    }
+
+    #F, #A {height:80px ;
+        padding-top: 30px;
+    }
+}
+/*2222222222222222222222222222222222222*/
+.general2{
+    margin-top:100px ;
+    border: 4px solid black;
+    border-radius: 15px;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#A2{
+    margin: 5px;
+    text-align:center;
+    padding-top: 45px;
+    background: #9f9f9f;
+    box-sizing: border-box;
+    width: 310px;
+    height: 100px;
+}
+
+.row2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.CDE_row{
+    display: flex;
+    flex-direction: row;
+}
+.CDE_row div{
+    margin: 5px;
+    box-sizing: border-box;
+    background: #9f9f9f;
+    height: 90px;
+    width: 60px;
+    text-align:center;
+    padding-top: 35px;
+}
+.double-row-column{
+    display: flex;
+    flex-direction: column;
+}
+#B2{
+    margin: 5px;
+    text-align:center;
+    padding-top: 45px;
+    background: #9f9f9f;
+    box-sizing: border-box;
+    width: 200px;
+    height: 100px;
+}
+#F2{
+    margin: 5px;
+    text-align:center;
+    padding-top: 100px;
+    background: #9f9f9f;
+    box-sizing: border-box;
+    width: 100px;
+    height: 200px;
+}
+@media screen and (max-width: 992px) {
+
+    .row2 {
+        flex-direction: column;
+    }
+    #A2, #B2, #F2{
+        width: 290px;
+        border-radius: 20px;
+        margin: 15px;
+    }
+
+    #F2, #A2 {height:60px ;
+        padding-top: 30px;
+    }
+    .CDE_row div{
+        width: 40px;
+        height: 40px;
+        padding-top: 10px;
+        border-radius: 20%;
+    }
+    .CDE_row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+/*3333333333333333333333333333333333*/
+.general3{
+    border: 4px solid black;
+    border-radius: 15px;
+    width: 320px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#A3{
+    margin: 5px;
+    text-align:center;
+    padding-top: 45px;
+    background: #9f9f9f;
+    box-sizing: border-box;
+    width: 310px;
+    height: 100px;
+}
+
+.row3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.CDE_row3{
+    display: flex;
+    flex-direction: row;
+}
+.CDE_row3 div{
+    margin: 5px;
+    box-sizing: border-box;
+    background: #9f9f9f;
+    height: 65px;
+    width: 60px;
+    text-align:center;
+    padding-top: 25px;
+}
+.double-row-column3{
+    display: flex;
+    flex-direction: column;
+}
+#H3{
+    margin: 5px;
+    text-align:center;
+    padding-top: 60px;
+    background: #9f9f9f;
+    box-sizing: border-box;
+    width: 100px;
+    height: 140px;
+}
+@media screen and (max-width: 992px) {
+
+    .row3 {
+        flex-direction: column;
+    }
+    #A3{
+        width: 290px;
+        border-radius: 20px;
+        margin: 15px;
+    }
+    #H3{
+        width: 290px;
+        border-radius: 20px;
+        margin: 15px;
+    }
+
+
+    .CDE_row3 div{
+        width: 40px;
+        height: 40px;
+        padding-top: 10px;
+        border-radius: 20%;
+    }
+    .CDE_row3{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
