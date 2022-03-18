@@ -4,7 +4,6 @@
 // Всі характеристики повинні мати свої блоки всередені div.post
 // https://jsonplaceholder.typicode.com/posts
 //
-let form = document.getElementsByTagName('form')[0]
 fetch('https://jsonplaceholder.typicode.com/posts')
     .then(data => data.json())
     .then(posts => {
@@ -28,7 +27,6 @@ fetch('https://jsonplaceholder.typicode.com/posts')
 //     Для кожного елементу свій блок div.comment
 // Всі характеристики повинні мати свої блоки всередені div.comment
 // https://jsonplaceholder.typicode.com/comments
-// let form = document.getElementsByTagName('form')[1]
 // fetch('https://jsonplaceholder.typicode.com/comments')
 //     .then(data => data.json())
 //     .then(coments => {
