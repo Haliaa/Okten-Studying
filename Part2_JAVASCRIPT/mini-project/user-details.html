@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .buttonPosts{
+            width: 90%;
+            background: #d71111;
+            border-radius: 30px;
+        }
+        .detailsBox {
+            border: solid #c42020 40px;
+            outline: 5px solid #000000;
+            border-radius: 10%;
+        }
+        .postsContainer{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .postContainer{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-end;
+            width: 17%;
+            background: #9f9f9f;
+            margin: 10px;
+            border: solid 3px #d71111;
+        }
+        .postButton{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h1>user details</h1>
+<script>
+    let url = new URL(location.href);
+    let details = JSON.parse(url.searchParams.get('data'));
+    let detailsBox = document.createElement('div')
+    detailsBox.setAttribute('class', 'detailsBox')
+    detailsBox.innerText = `
+    "id": ${details.id},
+    "name": ${details.name},
+    "username": ${details.username},
+    "email": ${details.email},
+    "address": {
+    "street": ${details.address.street},
+    "suite": ${details.address.suite},
+    "city": ${details.address.city},
+    "zipcode": ${details.address.zipcode},
+    "geo": {
+    "lat": ${details.address.geo.lat},
+    "lng": ${details.address.geo.lng}
+    }
+    "phone": ${details.phone},
+    "website": ${details.website},
+    "company": {
+    "name": ${details.company.name},
+    "catchPhrase": ${details.company.catchPhrase},
+    "bs": ${details.company.bs}
+  }
+  `
+    let buttonPosts = document.createElement('button')
+    buttonPosts.innerHTML = `<h2>check posts</h2>`
+    buttonPosts.setAttribute('class', 'buttonPosts')
+    buttonPosts.onclick = function () {
+        let postsContainer = document.createElement('div')
+        postsContainer.classList.add('postsContainer')
+        fetch(`https://jsonplaceholder.typicode.com/users/${details.id}/posts`)
+            .then(value => value.json())
+            .then(posts => {
+                for (const post of posts) {
+                    let postContainer = document.createElement('div')
+                    postContainer.classList.add('postContainer')
+                    let text = document.createElement('div')
+                    text.innerText = post.title
+                    let postButton = document.createElement('button')
+                    postButton.classList.add('postButton')
+                    postButton.innerText = `post-details`
+                    postButton.onclick = function () {
+                        location.href = `./post-details.html?data=${JSON.stringify(post)}`
+                    }
+                    postContainer.append(text,postButton)
+                    postsContainer.appendChild(postContainer)
+                }
+            })
+        document.body.appendChild(postsContainer)
+    }
+    document.body.append(detailsBox, buttonPosts)
+</script>
+
+</body>
+</html>
