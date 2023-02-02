@@ -1,0 +1,127 @@
+#parent {
+    display: flex;
+    flex-direction: row;
+}
+hr{
+    margin: 0;
+    border: none;
+    height: 1px;
+    background-color: #2493d0;
+}
+
+.box {
+    height: fit-content;
+    width: 150px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #2aa2e5;
+}
+
+.div1 {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    color: #cce7f5;
+    padding: 10px;
+}
+
+.div2 {
+    height: 70px;
+}
+
+.div21 {
+    height: fit-content;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    color: white;
+    font-size: 13px;
+    font-family: 'Arial';
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.div22 {
+    display: flex;
+    color: white;
+    font-size: 13px;
+    font-family: 'Arial';
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.div23 {
+    display: flex;
+    color: white;
+    font-size: 13px;
+    font-family: 'Arial';
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.div3 {
+    height: 45px;
+    background-color: #48b3ef;
+    border-radius: 0 0 5px 5px;
+
+}
+.netActive {
+    display: flex;
+    height: fit-content;
+    font-size: 10px;
+    align-items: flex-end;
+}
+
+.net{
+    display: flex;
+    width: 20px;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 3px;
+    margin-right: 8px;
+}
+
+.net1{
+    width: 1px;
+    height: 4px;
+    border: none;
+    border-radius: 20px;
+    background-color: #cce7f5;
+    margin: 0;
+}
+
+.net2{
+    width: 1px;
+    height: 9px;
+    border: none;
+    border-radius: 20px;
+    background-color: #cce7f5;
+    margin-left: 4px;
+}
+
+.net3{
+    width: 1px;
+    height: 14px;
+    border: none;
+    border-radius: 20px;
+    background-color: #cce7f5;
+    margin-left: 4px;
+}
+
+.sideArrowInCircle {
+    background-color: #50b7f2; 
+    /* padding: 6px 7px 6px 7px;  */
+    border: solid 0.1px rgba(255, 255, 255, 0.145);
+    border-radius: 50%;
+    height: 19px;
+}
+
+.countryFlag {
+    height: 45px;
+}
+
+.countryName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
