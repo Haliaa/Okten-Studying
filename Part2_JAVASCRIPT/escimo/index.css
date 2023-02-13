@@ -2,6 +2,15 @@
     display: flex;
     flex-direction: row;
 }
+
+.flex {
+    display: flex;
+}
+
+.padding{
+    padding: 0;
+}
+
 .hrDivider{
     margin-bottom: 10px;
     border: none;
@@ -15,6 +24,7 @@
     border-radius: 5px;
     font-size: 20px;
     background-color: #2aa2e5;
+    perspective: 1000px;
 }
 
 .div1 {
@@ -30,7 +40,7 @@
 }
 
 .div2 {
-    height: 140px;
+    height: 125px;
 }
 
 .div21 {
@@ -46,30 +56,30 @@
 }
 
 .div211 {
-    /* height: fit-content; */
     align-items: center;
     justify-content: flex-start;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    /* color: white;
-    font-size: 17px;
-    font-family: 'Arial';
-    font-weight: 500; */
 }
 .div22 {
     display: flex;
-    color: white;
     font-size: 10px;
     font-family: 'Manrope';
-    /* font-weight: 600; */
     color: #cce7f5;
     letter-spacing: 1px;
     padding: 0 15px 0 15px;
 }
+
+.gb{
+    font-size: 11px;
+    font-family: 'Manrope';
+    color: #cce7f5;
+    letter-spacing: 1px;
+    margin-left: 4px;
+}
 .div23 {
     display: flex;
-    /* margin-top: 10px; */
     align-items: center;
     color: white;
     font-size: 13px;
@@ -78,11 +88,28 @@
     letter-spacing: 1px;
     height: 40%;
 }
+.width100Per {
+    width: 100%;
+}
+.div31{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+.div33 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .div3 {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 70px;
     background-color: #48b3ef;
     border-radius: 0 0 5px 5px;
@@ -146,7 +173,6 @@
 .autoRefillButton {
     background-color: #2493d0; 
     display: flex;
-    /* justify-content: space-between; */
     justify-content: flex-start;
 
     align-items: center;
@@ -163,13 +189,6 @@
 .callButton{
     width: 80px;
 }
-
-/* .autoRefillText{
-    color: #cce7f5;
-    font-family: 'Manrope';
-    font-size: 11px; */
-    /* width: 80px; */
-/* } */
 
 .sideArrowInCircle {
     height: 23px;
@@ -199,4 +218,24 @@
     align-items: center;
     justify-content: center;
 }
+
+.boldWhiteFont {
+    color: white;
+    font-size: 11px;
+    font-family: 'Arial';
+    font-weight: 500;
+}
+
+.padding-top0 {
+    padding-top: 0;
+}
+
+.card__inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
 

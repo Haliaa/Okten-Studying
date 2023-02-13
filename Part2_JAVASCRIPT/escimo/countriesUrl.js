@@ -1,0 +1,412 @@
+const COUNTRIES_part1 = {
+    AF:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634b2e5fa42202e247d5eda6_AF-Flag.png",
+    AL:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634af41874f2986cdbf0414d_AL-Flag.png",
+    AE:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633db427c165e2d5075d961a_AE-Flag.png",
+    DZ:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63347b26848630c36b0f5321_DZ-Flag.png",
+    WS:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63496f1ac19d6472cc0bcde6_WS-Flag.png",
+    AO:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633efb90d2b967f0916f15d1_AO-Flag.png",
+    AI:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634b0ae02d6ff7f1e6a38a2f_AI-Flag.png",
+    AG:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634b2b5b316ad0e1f4d72d11_AG-Flag.png",
+    AR:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633603a7382460024900f7ae_AR-Flag.png",
+    AM:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6349872baa3b88dc45f5a442_AM-Flag.png",
+    AW:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633757df32ac8d6665db6705_AW-Flag.png",
+    AU:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633c77f3605516b324103f2f_AU-Flag.png",
+    AT:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63399e42a1f06fb3ad631dde_AT-Flag.png",
+
+    AZ:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6339d80e0a9495993947c014_AZ-Flag.png",
+    BS:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633defa1c33faac414eac013_BS-Flag.png",
+    BH:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63374004d7103015314fb60d_BH-Flag.png",
+    BD:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6339c6ed3b99ec9fec6f9b3c_BD-Flag.png",
+    BB:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633c89a5f89c06f206243f26_BB-Flag.png",
+    BY:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6335f0acdc25e447fa0b3d69_BY-Flag.png",
+    BE:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6339ed9ac2d6b064ed9afc9a_BE-Flag.png",
+    BJ:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633e85db1907f63cf5ca1a36_BJ-Flag.png",
+    BM:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633ef583a8c3b91df2cf2764_BM-Flag.png",
+    BG:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633331e711a43457e47729cb_BG-Flag.png",
+    BT:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633e8c3a167888247f9ea595_BT-Flag.png",
+    VE:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634db288ce407d75ffb38c0f_VE-Flag.png",
+    TT:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634da589d166e770b93f55e8_TT-Flag.png",
+    BQ:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6345ce71f76e1266a0d382e1_BQ-Flag.png",
+    BA:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6334738f91d838b52e0073f7_BA-Flag.png",
+    BW:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6339ccbf545704d54c80e936_BW-Flag.png",
+    BR:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63360645352fb0d4f5386648_BR-Flag.png",
+    BN:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6345aa8c81aa4d111a826c9d_BN-Flag.png",
+    BG:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633331e711a43457e47729cb_BG-Flag.png",
+    BF:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6339c57c6320c8062487396f_BF-Flag.png",
+    BI:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6339ce1a60d8472ab93a749d_BI-Flag.png",
+    CV:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633df158c76e96494003d2b9_CV-Flag.png",
+    KH:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633465e50cb5c343b01eb9d1_KH-Flag.png",
+    CM:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633ddd1f727e9519a6bc8e7f_CM-Flag.png",
+    CA:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633f38fac4b0957f0a324190_CA.png",
+    KY:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634b2707feb1d636478621a3_KY-Flag.png",
+    TD:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63494bf60126a84668eb9dbb_TD-Flag.png",
+    CL:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6336080803e0f268693bda07_CL-Flag.png",
+    CN:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633c78d7414b202e7ece1301_CN-Flag.png",
+    CO:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6336136c3dc3484afa1cab9e_CO-Flag.png",
+    CG:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633de30fc85d9151469add00_CG-Flag.png",
+    CH:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633dd89e8b0d70119305354c_CH-Flag.png",
+    CD:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6335fe96f108ca421cf81873_CD-Flag.png",
+    CR:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63361542c2a0da342007bbdc_CR-Flag.png",
+    HR:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6339bb43ab4d8827e8156002_HR-Flag.png",
+    CU:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63384a427d3b90ffae8d2c6f_CU-Flag.png",
+    CW:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633f037fd2a6d37763ab9c28_CW-Flag.png",
+    CY:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63333ae95a32c771af28073e_CY-Flag.png",
+    CZ:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633c7a47fa237958f6e12484_CZ-Flag.png",
+    TL:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634c3aaaa2d140a949e87d75_TL-Flag.png",
+    DK:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633875bde851f0ed36da7da5_DK-Flag.png",
+    DM:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633db825a124de90737f1422_DM-Flag.png",
+    EC:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63361709c3468685f5173c3f_EC-Flag.png",
+    EG:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633deda10a647773e2fe69d1_EG.png",
+    SV:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634e6bd307cfd83f4752ecc0_SV-Flag.png",
+    GQ:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633317b438eafd0438d001fd_GQ-Flag.png",
+    EE:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63399c3adcb06d9d8480a793_EE-Flag.png",
+    ET:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63332b1a2d7938a4d630cae0_ET-Flag.png",
+    FO:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633e8fdc994c2c52728d86c0_FO-Flag.png",
+    FJ:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633dc160fc767a0cfbf67f6d_FJ-Flag.png",
+    NR:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6345c4771320c243f4366e12_NR-Flag.png",
+    FI:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63399f1b6320c8669d857086_FI-Card.png",
+    FR:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63384bf2c6e89f72c89937af_FR-Flag.png",
+    GF:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63494f4f5669487ab3cb2d42_GF-Flag.png",
+    PF:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634c44750007a15e56296076_PF-Flag.png",
+    DE:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633347eca1162a664dc83b69_DE-Flag.png"
+  };
+
+const COUNTRIES_part2 = {
+GA:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633c99a9bd02bf6969a42838_GA-Flag.png",
+GM:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6339c95fe851f003e2e87c5a_GM-Flag.png",
+GE:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63387a898c00c94e96bce4d9_GE-Flag.png",
+GH:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633dcaa86f6af83ccd0e619e_GH-Flag.png",
+GI:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633f1761c38b1c39c617c380_GI-Flag.png",
+GR:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633426885a9abdd792794389_GR-Flag.png",
+GL:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633750a8b3ed07a1439225f7_GL-Flag.png",
+GD:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634b22aef1330a6896ca1877_GD-Flag.png",
+GP:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634674df2ea6888a6cc02c4a_GP-Flag.png",
+GU:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6339e87dc6e89f52ffa93b6e_GU-Flag.png",
+GT:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6336183d352fb0e3b4396ec3_GT-Flag.png",
+GG:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633c8443eb8f2c64790d70a3_GG-Flag.png",
+GN:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633dec1ca6aaa98d31a76fe5_GN-Flag.png",
+GW:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633deeb0fa9bf6a7daf20ad9_GW-Flag.png",
+GY:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633ef66997e71f0ac5207a9e_GY-Flag.png",
+HT:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633f056bf46c1d69d35e5136_HT-Flag.png",
+HN:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6339e300c9cd1b4fe491e897_HN-Flag.png",
+HK:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6339a06161a7c307ca810478_HK-Flag.png",
+BG:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633331e711a43457e47729cb_BG-Flag.png",
+IS:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6339bdf9a1f06f548c648915_IS-Flag.png",
+IN:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633e93bf5e9dc940a92d3b48_IN-Flag.png",
+ID:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633c7b30bff2e40b8abea06c_ID-Flag.png",
+IR:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634f0e565d68721627e9ddc7_IR-Flag.png",
+IQ:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634ac08fc8b9e21cc37e4744_IQ-Flag.png",
+IE:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63399fe568e0aa1645ba83f1_IE-Flag.png",
+IL:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6334295b3fdc481b7f6d31c2_IL-Flag.png",
+IT:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633c759e83666517798cb9d8_IT-Flag.png",
+JM:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63384234f6ee974f4c465ebe_JM-Flag.png",
+JP:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633f39b5430756539ec803e8_JP-Flag.png",
+JE:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63346fb5b44ba96280f52996_JE-Flag.png",
+JO:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6339da5dc6e89f1d84a88c66_JO-Flag.png",
+KZ:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63388007c2d6b025278d2890_KZ-Flag.png",
+KE:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6339e9668721fd64fe9453a6_KE.png",
+KR:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6335424695a2bb5d2a0536d0_KR-Flag.png",
+XK:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634eee0e78195cf6573e019a_XK-Flag.png",
+KW:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633f1ca6da569b28c336fa94_KW-Flag.png",
+KG:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633c853c738e4110f60ae130_KG-Flag.png",
+LA:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633ddb61c33faa1edce9a0a3_LA-Flag.png",
+LV:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6339b717ad6a6d6ee5074449_LV-Flag.png",
+LB:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633e921f6f62fb7abc589a39_LB-Flag.png",
+LS:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63349bc76bcc44973868b596_LS-flag.png",
+LR:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633dea2067f5ee85679bb732_LR-Flag.png",
+LI:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633c8193938d9ab2adff4dd8_LI-Flag.png",
+LT:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63399d800a94958de14535a2_LT-Flag.png",
+LU:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6339f05fd9b979165fe4e596_LU-Flag.png",
+MO:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634b39a174f2980c7ef32e2c_MO-Flag.png",
+MK:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6337550be98bd9e2b87e04bc_MK-Flag.png",
+MG:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633de12efec228127cc3064f_MG-Flag.png",
+MW:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633de421adb34e8500061b61_MW-Flag.png",
+MY:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634c250cfeb1d606788f7190_MY-Flag.png",
+MV:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63384816c6e89fdd35991b32_MV-Flag.png",
+MT:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634d6ee455ed6cccd85a2864_MT-Flag.png",
+IM:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633de54e9a90ee74cd0c87ac_IM-Flag.png",
+MQ:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6346688dc8060e6b2bf95be6_MQ-Flag.png",
+MR:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633495b8cda694290352447d_MR-Flag.png",
+MU:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63375e1c1b0d3670400b284f_MU-Flag.png",
+YT:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634c38626f6b026097a41eb1_YT-Flag.png",
+MX:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634ead1d492df4d3ccff8262_MX-Flag.png",
+GH:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633dcaa86f6af83ccd0e619e_GH-Flag.png",
+MC:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63458705c59a4144cc051375_MC-Flag.png",
+MN:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6339df1dc32051217d2e4cd3_MN-Flag.png",
+ME:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633e95c15cff56020a92a707_ME-Flag.png",
+MS:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634b12b33b3269f6c1e8865c_MS-Flag.png",
+MA:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633ddece9ee8ae92cba7246f_MA-Flag.png",
+MZ:
+    "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634f11e62fb6d1049849ec8e_MZ-Flag.png"
+};
+
+const COUNTRIES_part3 = {
+    MM:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633c6e32f275a0b795338c6a_MM-Flag.png",
+    NA:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634945b1b7be8fcac5260ed0_NA-Flag.png",
+    NR:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6345c4771320c243f4366e12_NR-Flag.png",
+    NP:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6337471032ac8d956dda9a40_NP-Flag.png",
+    NL:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6339a12aab4d88877414645f_NL-Flag.png",
+    NZ:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634c11fb37a65364ce8b7191_NZ-Flag.png",
+    NI:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634e6e2422b4d5835661ee69_NI-Flag.png",
+    NE:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6349486a110bde9dfe5c441c_NE-Flag.png",
+    NG:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634b32fa9902369383822e8a_NG-Flag.png",
+    KP:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6335424695a2bb5d2a0536d0_KR-Flag.png",
+    NO:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63342f6de815521537f17103_NO-Flag.png",
+    OM:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63496aa01301dee858c3095d_OM-Flag.png",
+    PK:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6345a874741afce78a2fcb1f_PK-Flag.png",
+    PA:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634e664d07cfd8e49e52a5fc_PA-Flag.png",
+    WS:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63496f1ac19d6472cc0bcde6_WS-Flag.png",
+    PY:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634f104960c0cda67113cf35_PY-Flag.png",
+    PE:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634dc007a3be178e7bb11244_PE-Flag.png",
+    PH:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633c7cd9c3753a184f53c4cd_PH-Flag.png",
+    PL:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633c7228f568e0029b374ae5_PL-Flag.png",
+    PT:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634d7a2c7295ed3543258b9d_PT-Flag.png",
+    PR:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63459d1a91b94b1a1de27624_PR-Flag.png",
+    QA:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633476a6d947e1ffe7f63710_QA-Flag.png",
+    RE:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634c2a9ff1330a4c4dd3d5ee_RE-Flag.png",
+    RO:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634b491dc54c3010e8dc9e4a_RO-Flag.png",
+    RU:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633f01178497fa764f4cae0a_RU-Flag.png",
+    RW:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634b0259316ad03280d4fec3_RW-Flag.png",
+    SV:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6345bfe2c9ca0ed0e5eaf868_SV-Flag.png",
+    KN:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633c8c3a0e444cbfee9c32db_KN-Flag.png",
+    LC:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633dc4b668c045d4712d1948_LC-Flag.png",
+    VC:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634b2161feb1d6da1d85ee87_VC-Flag.png",
+    WS:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63496f1ac19d6472cc0bcde6_WS-Flag.png",
+    SM:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634b35e1428502b5b8522731_SM-Flag.png",
+    SA:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63374af6ac946ad35d6831e5_SA-Flag.png",
+    SN:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/635024a87ab0201c0c8b1b6a_SN-Flag.png",
+    RS:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6349537e1301de66e7c181db_RS-Flag.png",
+    SC:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633da95504995b49f73170f0_SC-Flag.png",
+    SL:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634c415abca0d22f5092a8e4_SL-Flag.png",
+    SG:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634ac777c54c303275d71871_SG-Flag.png",
+    SK:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6339c04068e0aa7280bc4e25_SK-Flag.png",
+    SI:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6339b8e5b5d7fab714e63afb_SI-Flag.png",
+    ZA:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6334b269977ab4fe1c4d7fcc_ZA-Flag.png",
+    GE:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/63387a898c00c94e96bce4d9_GE-Flag.png",
+    SD:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634b1e03ee461183b0b7ea58_SD-Flag.png",
+    ES:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6339ea920a94953b8748be2c_ES-Flag.png",
+    LK:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633ddfc53785c76753d44f16_LK-Flag.png",
+    SD:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634b1e03ee461183b0b7ea58_SD-Flag.png",
+    SE:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6339954e54570468a37dd793_SE-Flag.png",
+    TW:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634d72232c1716695a1ea1f9_TW-Flag.png",
+    TJ:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634c627c29d4e1aee067428c_TJ-Flag.png",
+    TZ:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6336a6ae3354ba33445a8dc4_TZ-Flag.png",
+    TH:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634b46dff1330a04ffcb7a10_TH-Flag.png",
+    TO:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6345b45c25fd13031ef2c9bc_TO-Flag.png",
+    TT:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634d83cf97320cebb444c785_TT-Flag.png",
+    TN:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634c3f5cc8b9e23adc8de3a7_TN-Flag.png",
+    TR:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633dc693aea8e6822a353734_TR-Flag.png",
+    TC:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634b06f23b326919dce7f758_TC-Flag.png",
+    UG:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633db0bbc165e2f64c5d6a7d_UG-Flag.png",
+    UA:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6339ef552bb4dec987decb51_UA-Flag.png",
+    GB:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6339a7e6dcea692b9a279a89_GB-Flag.png",
+    US:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633de671ec589f2f41b6219b_US-Flag.png",
+    UY:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634db553623e3c31e645cc8c_UY-Flag.png",
+    UZ:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/633998a95457046c567e0c33_UZ-Flag.png",
+    VU:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/6345b13387536ce23b46d3ca_VU-Flag.png",
+    VN:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634aefd93b326906fbe6db58_VN-Flag.png",
+    VG:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634b162ba2d140f5fedcb505_VG-Flag.png",
+    ZM:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634afa893b32695f3ae73a75_ZM-Flag.png",
+    ZW:
+      "https://assets-global.website-files.com/622e1a4376cb671f1d71f7e7/634979b0cd3770721c5c0372_ZW-Flag.png"
+  };
+
